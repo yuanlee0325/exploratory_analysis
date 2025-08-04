@@ -1,0 +1,5 @@
+exponential fitting 
+y = y0 + A * exp(R0 * x)
+y0 = -25.97383
+A = 24.584198
+R0 = -0.34525

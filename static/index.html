@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opentrons Platform Using AIOHTTP</title>
+</head>
+<body>
+    <h2>👍 Set Opentrons and Realsense Camera </h2>
+    <h3>⭐ Camera and Server (Operator: computer)
+        <li>✔️ 🖥️ app.router.add_get('/', handle_index)</li>
+        <li>✔️ 📷 app.router.add_post('/send_message', receive_message)</li>
+        <li>✔️ 📷 app.router.add_post('/capture_images', capture_images)</li>
+        <li>✔️ 🖥️ app.router.add_get('/check_file_status', check_file_status)</li>
+        <li>🏍️ app.router.add_get('/execute_protocol', execute_protocol)</li>
+    </h3>
+    <h3>Opentrons Protocol (Operator: OT-2)  
+        <li>✔️ Add requests package for OT-2 🤖</li>
+        <li> Build a driver to control OT-2 🤖</li>  
+    </h3>
+    <h2>📃 Opentrons and Realsense Camera test list </h2>
+    <h3>
+        <li>✔️ 📷 Test Camera </li>
+        <li> 🤖 Test Driver </li>
+    </h3>
+    <h3>
+        <li>🚀 Run protocol with simulator 
+            <ul>
+                <h4>
+                    <li>✔️ Test 1: move_commands.json only containg move_to_camera_rack </li>
+                    <li>✔️ Test 2: move_commands.json only containg move_substances, but not containing 'plate on heater shaker'</li>
+                    <li>✔️ Test 3: move_commands.json only containing use_heater_shaker</li>
+                    <li>✔️ Test 4: move_commands.json containing move_to_camera_rack and move_substances</li>
+                    <li>✔️ Test 5: move_commands.json containing move_substances('plate on heater shaker') and use_heater_shaker</li>
+                    <li>✔️ Test 6: move_commands.json containing move_substances, move_to_camera_rack, and use heater_shaker</li>
+                </h4>
+            </ul> 
+        </li>
+    </h3>
+    <h3>
+        <li>🔍 Image analysis
+            <ul>
+                <h4>
+                    <li>✔️ Test 1: image analysis on computer</li>
+                    <li>✔️ Test 2: real-time analysis </li>
+                    <li>✔️ Test 3: check the existence of analysis.csv during running move_commands </li>
+                    <li> Test 4: update 'move_substances' type within the move_commands.json (pip install watchdog) based on the analysis result</li>
+                </h4>
+            </ul>
+        </li>
+    </h3>
+    <h3>
+        <li>👩🏻‍🔬 Run protocol with ot-2 robot through jupyter notebook 
+            <ul>
+                <h4>
+                    <li>✔️ Test 1: home_robot()  and home_robot_remove_tip () 🧯</li>
+                    <li>✔️ Test 2: move_commands.json only containg move_to_camera_rack </li>
+                    <li>✔️ Test 3: move_commands.json only containg move_substances, but not comntaining 'plate_on_heater_shaker'</li>
+                    <li>✔️ Test 4: move_commands.json only containing use_heater_shaker</li>
+                    <li>✔️ Test 5: move_commands.json containing move_to_camera_rack and move_substances</li>
+                    <li>✔️ Test 6: move_commands.json containing move_substances('plate on heater shaker') and use_heater_shaker</li>
+                    <li>✔️ Test 7: move_commands.json containing move_substances, move_to_camera_rack, and use heater_shaker</li>
+                </h4>
+            </ul>
+        </li>
+    </h3>
+    <h3>
+        <li>👩🏻‍🔬 Run protocol with ot-2 robot through the ot-2 driver
+            <ul>
+                <h4>
+                    <li> Test 1: Run protocol including home_robot() and home_robot_remove_tip () 🧯</li>
+                    <li> Test 2: move_commands.json containg move_substances(including plate_on_heater_shaker) </li>
+                    <li> Test 3: move_commands.json containg move_substances and capture_images</li>
+                    <li> Test 4: move_commands.json containing use_heater_shaker</li>
+                    <li> Test 5: move_commands.json containing capture_images, image_analysis, and reflect the analysis results</li>
+                </h4>
+            </ul>
+        </li>
+    </h3>
+    <h2>Keep Going!🤗</h2>
+</body>
+</html>
