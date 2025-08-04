@@ -1,0 +1,25 @@
+### Notes for Using protocol.py ###
+# For using the heater_shaker module and set_offset function together, API version must be higher than '2.18'. 
+# Enter 'systemctl stop opentrons-robot-server' in the terminal of jupyter notebook to stop the connecton between the robot and software
+# Enter 'systemctl start opentrons-robot-server' in the terminal of jupyter notebookto recover the connection between the robot and software 
+# For organic solvent, please use filter tip
+# For left pipette (8-channel pipett), its corresponding layout of the wellplate is 12 columns nameds as A1, A2, ..., A12.
+# For trackingthe usage of substances, check the layout of the reservoir/pipette type and upgrade the information in move_substances method.
+# For Opentrons class, any labware appeared in the deck_info should not be pre-loaded or not appear in the initial self.labware dict.
+# For the deck_info(substance.json) dict, the key is deck slot and its value is a dict with keys: name, type, and well position.
+# For the value of deck_info, the value of type must be standard name of labware defined by opentrons, but name is flexible.
+# For set offset of the labwares, the number of the items in the system_config.json is the same as self.labwares.
+# Please keep consistent with all names of the labwares. (__init__ definition, substance.json, system_config., and move_commands.json)
+# For the Accessor methods of wells, labware.wells() - List of all wells was chosen.
+
+
+!!! Caution !!!
+# Please do not place labware taller than 53 mm to the left or right of the Heater-Shaker. 
+# You can not perform pipetting actions in any slot adjacent to the Heater-Shaker if you are using a GEN2 or GEN1 8-channel pipette.
+# For the structure of the run method under the protocol, the first command you execute should always be home()(here: home_robot()).
+# For Custom Labware, create it with the 'Opentrons Labware Creator', and saved it as .json file. (However, the 'Labware Creator' will not handle Heater-Shaker compatible custom labware requests)
+# For the temperature-related hardware modules, it must be connected to the usb port 1 or 2 of the OT-2. (The OT-2 maps out each module sequentially, based on the order it is called in your protocol.)
+# The robot will not automatically deactivate the Heater-Shaker at the end of a protocol. 
+# All OT-2 GEN2 pipettes have a default head peed of 400 mm/s and a well bottom clearance of 1 mm for aspirate and dispense actions.
+
+

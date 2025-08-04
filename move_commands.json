@@ -1,0 +1,22 @@
+[
+    {
+        "type": "move_substances",
+        "amount": 100,
+        "substance_name": "Orange Water",
+        "position_to": {
+            "labware": "plate",
+            "slot": 5,
+            "wells": ["A5"]
+        },
+        "mount": "right"
+    },
+    {
+        "type": "capture_images",
+        "position_to": {
+            "labware": "camera_rack",
+            "slot": 3,
+            "wells": "D3"
+        },
+        "delay_time": 15
+    }
+]

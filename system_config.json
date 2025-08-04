@@ -1,0 +1,55 @@
+{ 
+  "camera_rack": {
+    "type": "opentrons_96_tiprack_20ul",
+    "pos": 3,
+    "offset": {
+      "x": 0.0,
+      "y": 0.1,
+      "z": 0.1
+    }
+  },
+  "plate": {
+    "type": "corning_96_wellplate_360ul_flat",
+    "pos": 5,
+    "offset": {
+      "x": -0.3,
+      "y": -0.2,
+      "z": 0.8
+    }
+  },
+  "reservoir": {
+    "type": "azenta_12_reservoir_2100ul",
+    "pos": 6,
+    "offset": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 11.0
+    }
+  },
+  "tiprack300": {
+    "type": "opentrons_96_tiprack_300ul",
+    "pos": 10,
+    "offset": {
+      "x": -0.9,
+      "y": 0.6,
+      "z": 0.2
+    }
+  },
+  "plate_on_heater_shaker": {
+    "type": "opentrons_96_deep_well_adapter_nest_wellplate_2ml_deep",
+    "pos": 12,
+    "offset": {
+      "x": 0.3,
+      "y": 1.2,
+      "z": 4.3
+    }
+  },
+  "left_pipette": {
+    "type": "p300_multi_gen2",
+    "mount": "left"
+  },
+  "right_pipette": {
+    "type": "p20_single_gen2",
+    "mount": "right"
+  }
+}

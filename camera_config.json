@@ -1,0 +1,8 @@
+{
+    "fname": "test",
+    "folder": "../captured_images/20250711",
+    "frame_interval": 2,
+    "stop": 0.002,
+    "take_image": true,
+    "sensitivity": 110
+}

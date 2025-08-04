@@ -1,0 +1,65 @@
+{
+  "6": {
+    "name": "reservoir",
+    "type": "nest_12_reservoir_15ml",
+    "A3": {
+      "substance": "Water",
+      "amount": 10000,
+      "solvent_type": "aqueous"
+    },
+    "A5": {
+      "substance": "Blue Water",
+      "amount": 10000,
+      "solvent_type": "aqueous"
+    },   
+    "A11": {
+      "substance": "Orange Water",
+      "amount": 10000,
+      "solvent_type": "aqueous"
+    }  
+  },
+  "12": {
+    "name": "plate_on_heater_shaker",
+    "type": "opentrons_96_deep_well_adapter_nest_wellplate_2ml_deep",
+    "A1": {
+      "substance": "Green Water",
+      "amount": 1000,
+      "solvent_type": "aqueous"
+    },
+    "B1": {
+      "substance": "Green Water",
+      "amount": 1000,
+      "solvent_type": "aqueous"
+    },
+    "C1": {
+      "substance": "Green Water",
+      "amount": 1000,
+      "solvent_type": "aqueous"
+    },
+    "D1": {
+      "substance": "Green Water",
+      "amount": 1000,
+      "solvent_type": "aqueous"
+    },
+    "E1": {
+      "substance": "Green Water",
+      "amount": 1000,
+      "solvent_type": "aqueous"
+    },
+    "F1": {
+      "substance": "Green Water",
+      "amount": 1000,
+      "solvent_type": "aqueous"
+    },
+    "G1": {
+      "substance": "Green Water",
+      "amount": 1000,
+      "solvent_type": "aqueous"
+    },
+    "H1": {
+      "substance": "Green Water",
+      "amount": 1000,
+      "solvent_type": "aqueous"
+    }
+  }
+}
