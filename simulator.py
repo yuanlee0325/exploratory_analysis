@@ -2,7 +2,7 @@ from opentrons.simulate import simulate, format_runlog
 import argparse
 from pathlib import Path
 
-path = Path('protocol_csv.py')
+path = Path('protocol.py')
 
 def run_simulation(path):
     try:
@@ -20,3 +20,4 @@ if __name__ == '__main__':
     parser.add_argument('-i', help='path')
     args = parser.parse_args()
     run_simulation(args.i)
+
